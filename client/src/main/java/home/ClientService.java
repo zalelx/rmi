@@ -53,7 +53,7 @@ public class ClientService {
                     M1=in.nextInt();
                     System.out.println("Enter the number of columns:\n");
                     N1=in.nextInt();
-                    double [][] matrA=new double[M1][N1];
+                    Double [][] matrA=new Double[M1][N1];
                     System.out.println("Enter the elements:\n");
                     //заполнение первой матрицы
                     for (i=0;i<M1;i++){
@@ -67,7 +67,7 @@ public class ClientService {
                     M2=in.nextInt();
                     System.out.println("Enter the number of columns:\n");
                     N2=in.nextInt();
-                    double [][] matrB=new double[M2][N2];
+                    Double [][] matrB=new Double[M2][N2];
                     System.out.println("Enter the elements:\n");
                     //заполнение второй матрицы
                     for (i=0;i<M2;i++){
@@ -77,8 +77,8 @@ public class ClientService {
                     }
 
                     //!!! жалуется на эту строчку
-                   // System.out.println("Multiplication of two arrays: " + Arrays.deepToString(matrA) + " and " + Arrays.deepToString(matrB)
-                     //      + " is: " + Arrays.deepToString(service.multiply(matrA, matrB))+"\n");
+                   System.out.println("Multiplication of two arrays: " + Arrays.deepToString(matrA) + " and " + Arrays.deepToString(matrB)
+                          + " is: " + Arrays.deepToString(service.multiply(matrA, matrB))+"\n");
                     //Double[][] A = {{4.00, 3.00}, {2.00, 1.00}};
                     //Double[][] B = {{-0.500, 1.500}, {1.000, -2.0000}};
                     break;
