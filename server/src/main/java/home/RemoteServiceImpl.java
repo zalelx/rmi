@@ -37,8 +37,8 @@ public class RemoteServiceImpl implements RemoteService {
         }
 
         Double[][] C = new Double[aRows][bColumns];
-        for (int i = 0; i < 2; i++) {
-            for (int j = 0; j < 2; j++) {
+        for (int i = 0; i < aRows; i++) {
+            for (int j = 0; j < bColumns; j++) {
                 C[i][j] = 0.0;
             }
         }

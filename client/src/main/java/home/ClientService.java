@@ -76,11 +76,8 @@ public class ClientService {
                         }
                     }
 
-                    //!!! жалуется на эту строчку
-                   System.out.println("Multiplication of two arrays: " + Arrays.deepToString(matrA) + " and " + Arrays.deepToString(matrB)
+                   System.out.println("Multiplication of two matrix: " + Arrays.deepToString(matrA) + " and " + Arrays.deepToString(matrB)
                           + " is: " + Arrays.deepToString(service.multiply(matrA, matrB))+"\n");
-                    //Double[][] A = {{4.00, 3.00}, {2.00, 1.00}};
-                    //Double[][] B = {{-0.500, 1.500}, {1.000, -2.0000}};
                     break;
 
             }
