@@ -8,15 +8,14 @@ import java.util.Scanner;
 public class ClientService {
 
     public static void main(String... args) throws Exception {
-        Registry registry = LocateRegistry.getRegistry("localhost", 2099);
-        RemoteService service = (RemoteService) registry.lookup("sample/RemoteService");
+        Registry registry = LocateRegistry.getRegistry(RemoteService.HOST, RemoteService.PORT);
+        RemoteService service = (RemoteService) registry.lookup(RemoteService.BINDING_NAME);
 
 
         int choice=0;
         int i;
         int j;
         while (choice!=4) {
-            //Runtime.getRuntime().exec("cls");
             System.out.println("MENU:\n1.Calculation of Sum\n2.Finding median\n3.Multiplication of matrix\n4.Exit ");
             Scanner in = new Scanner(System.in);
             choice = in.nextInt();

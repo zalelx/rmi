@@ -55,10 +55,10 @@ public class RemoteServiceImpl implements RemoteService {
     }
 
     public static void main(String[] args) throws RemoteException, AlreadyBoundException {
-        final String BINDING_NAME = "sample/RemoteService";
+
 
         System.out.print("Starting registry...");
-        final Registry registry = LocateRegistry.createRegistry(2099);
+        final Registry registry = LocateRegistry.createRegistry(PORT);
         System.out.println(" OK");
 
         final RemoteService service = new RemoteServiceImpl();
